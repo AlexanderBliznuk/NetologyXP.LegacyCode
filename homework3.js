@@ -21,6 +21,7 @@ player.showHighScoreList = function(pageToken) {
             player.createPlayerList(root, response.items, true);
             if (response.prevPageToken) {
                 root.appendChild(
+                    //seam #5
                     utilities.createButton('Prev', response.prevPageToken,
                         function(event) {
                             player.showHighScoreList(event.target.value);
