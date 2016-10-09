@@ -17,6 +17,7 @@ player.showHighScoreList = function(pageToken) {
                 return;
             }
             var root = document.getElementById('highScoreListDiv');
+            //seam #4
             player.createPlayerList(root, response.items, true);
             if (response.prevPageToken) {
                 root.appendChild(
