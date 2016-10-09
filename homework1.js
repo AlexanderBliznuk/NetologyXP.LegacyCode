@@ -16,6 +16,7 @@ function checkURL() {
         document.title = (title || document.title);
         //console.log("page title: " + document.title);
 
+        //seam
         // parse url to jquery
         loadURL(url + location.search, container);
     } else {
