@@ -32,6 +32,7 @@ function formSetEditReport(idReport) {
         $('.' + report.type + ' [report-unique-id=' + report.reports[key] + ']').prop('checked', 'checked');
     }
 
+    //seam #3
     updateReportParametersFunctions[report.type](report.parameters);
 
     $('#report_idreport').val(idReport);
