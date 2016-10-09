@@ -15,7 +15,7 @@ function formSetEditReport(idReport) {
     else {
         $('#report_submit').val(ReportPlugin.createReportString);
     }
-
+    //seam #2
     toggleReportType(report.type);
 
     $('#report_description').html(report.description);
