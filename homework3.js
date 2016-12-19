@@ -3,6 +3,9 @@ player.showHighScoreList = function(pageToken) {
     document.querySelector('#highScoreListDiv').style.display = 'block';
     // Create the request.
     LEADERBOARD_ID = document.getElementById('leaderboardIdShowHS').value;
+
+    //dependency #2
+    //pass request as an argument to break dependency
     var request = gapi.client.games.scores.list(
         {leaderboardId: LEADERBOARD_ID,
             collection: 'PUBLIC',
