@@ -9,6 +9,8 @@ function formSetEditReport(idReport) {
     };
 
     if (idReport > 0) {
+        //dependency #1
+        //change signature of formSetEditReport to formSetEditReport(report); use report.getId to obtain report id
         report = ReportPlugin.reportList[idReport];
         $('#report_submit').val(ReportPlugin.updateReportString);
     }
